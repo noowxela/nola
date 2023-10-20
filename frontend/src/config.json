@@ -1,0 +1,7 @@
+{
+  "SERVER_URL": "http://xx.xxx.xxx.xx:8000/",
+  "LOCAL_URL": "http://localhost:8000/graphql?",
+  "LIVE_URL": "https://production/graphql/",
+  "STAGINGAPI_URL": "http://localhost:8000/",
+  "GOOGLE_ANALYTIC": ""
+}

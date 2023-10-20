@@ -1,0 +1,64 @@
+.main-layout {
+  background-color: #fafafa;
+  padding-top: 10%;
+}
+
+.header {
+  padding-top: 5px;
+  background-color: #212121;
+  height: 80px;
+}
+
+.header-title {
+  font-size: 16px;
+  line-height: 19.5px;
+  color: #d22027;
+  font-weight: 500;
+  margin-left: 20px;
+}
+
+.main-space {
+  width: 400px;
+  margin: 0 auto;
+  height: 100vh;
+  background-color: #fafafa;
+}
+
+.forgot-button {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: #c62828;
+}
+
+.remember-me-checkbox {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.login-input .ant-input .ant-input-lg .login-input:hover,
+.login-input:focus,
+.login-input::content {
+  background-color: #fafafa !important;
+}
+
+.login-input {
+  border-radius: 4px;
+}
+
+.login-container {
+  background-color: white;
+  padding: 10vh 10vw;
+  margin: 10vh 20vw;
+  width: 60vw;
+}
+
+.login-button {
+  width: 100%;
+}
