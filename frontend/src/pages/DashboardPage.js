@@ -71,7 +71,12 @@ const DashboardPage = () => {
   }, [currentUserLoading, currentUserData]);
 
   useEffect(() => {
-    if (summaryLoading === false) {
+    if (summaryError) {
+      // Handle the error, e.g., display an error message
+      console.error("Error GETDASHBOARDSUMMARY data:", summaryError);
+      return;
+    }
+    if (summaryLoading === false & summaryData) {
       console.log(summaryData.getDashboardSummary);
     }
   }, [summaryLoading, summaryData]);

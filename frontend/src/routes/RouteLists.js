@@ -55,7 +55,15 @@ export default function RouteList() {
   const { loading, error, data, refetch } = useQuery(portalListShop);
 
   useEffect(() => {
-    if (loading === false) {
+    if (error) {
+      // Handle the error, e.g., display an error message
+      console.error("Error loading data:", error);
+      return;
+    }
+
+    console.log("routelist")
+    if (loading === false & data) {
+      console.log("okkk")
       const filterHQShop = data.portalListShop.filter((e) => {
         return (
           e._id.toString() !== "628d1fc1b0dcf55520c00304" &&
@@ -64,7 +72,7 @@ export default function RouteList() {
       });
       setExcludeHQList(filterHQShop);
     }
-  }, [loading, data]);
+  }, [loading, data, error]);
 
 
   useEffect(() => {
