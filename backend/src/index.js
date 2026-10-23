@@ -12,7 +12,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = __filename.substring(0, __filename.lastIndexOf('/'));
 
 addAlias('@app', `${__dirname}/`);
-import 'dotenv/config'
+import 'dotenv/config.js'
 import './service/logger.js'
 import { schema } from './graphql/schema.js';
 // import { i18next, i18nextMiddleware } from './i18next/index.js';
